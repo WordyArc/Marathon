@@ -5,17 +5,88 @@ html, body {
 }
 
 .header {
-
+    display: block;
+    width: 100%;
+    height: 330px;
+    background: teal;
 }
+    .hcont {
+        display: block;
+        width: 95%;
+        height: 260px;
+        margin: 0 auto;
+        background: royalblue;
+    }
+        #logo {
+            max-width: 100%;
+            height: 80%;
+            margin: 2%;
+        }
+
+    .navbar {
+        display: block;
+        width: 95%;
+        height: 63px;
+        margin: 0 auto;
+        background: gold;
+    }
+        .hidden-menu {
+            display: block;
+            position: fixed;
+            list-style:none;
+            padding: 10px;
+            margin: 0;
+            box-sizing: border-box;
+            width: 200px;
+            background-color: #eee;
+            height: 100%;
+            top: 0;
+            left: -200px;
+            transition: left .2s;
+            z-index: 2;
+            -webkit-transform: translateZ(0);
+            -webkit-backface-visibility: hidden;
+        }
+        .hidden-menu-ticker {
+            display: none;
+        }
+        .btn-menu {
+            color: #fff;
+            background-color: #666;
+            padding: 5px;
+            position: fixed;
+            top: 5px;
+            left: 5px;
+            cursor: pointer;
+            transition: left .23s;
+            z-index: 3;
+            width: 25px;
+            -webkit-transform: translateZ(0);
+            -webkit-backface-visibility: hidden;
+        }
+        .btn-menu span {
+            display: block;
+            height: 5px;
+            background-color: #fff;
+            margin: 5px 0 0;
+            transition: all .1s linear .23s;
+            position: relative;
+        }
+        .btn-menu span.first {
+            margin-top: 0;
+        }
 
 .content {
+    display: block;
     width: 100%;
-    max-width: 600px;
+    max-width: 980px;
     height: 500px;
     margin: 0 auto;
-    background: teal;
+    background: yellow;
 }
 
 .footer {
-
+    width: 100%;
+    height: 300px;
+    background: #424242;
 }
