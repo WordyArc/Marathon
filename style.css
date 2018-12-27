@@ -2,17 +2,21 @@ html, body {
     padding: 0;
     margin: 0;
     color: white;
+
+    font-family: 'helvetica_ce_55_roman', Arial, sans-serif;
 }
 
 .header {
     display: block;
+    position: relative;
     width: 100%;
     height: 330px;
     background: teal;
 }
     .hcont {
         display: block;
-        width: 95%;
+        width: 100%;
+        max-width: 1200px;
         height: 260px;
         margin: 0 auto;
         background: royalblue;
@@ -24,12 +28,29 @@ html, body {
         }
 
     .navbar {
+        position: inherit;
         display: block;
-        width: 95%;
+        width: 100%;
+        max-width: 1200px;
         height: 63px;
         margin: 0 auto;
         background: gold;
+
+        overflow-x: auto;
+
     }
+        .navbarli {
+            position: absolute;
+            display: block;
+            width: 100%;
+            max-width: 980px;
+            font-size: 28px;
+            /*margin: 1% 50% 0 50%;*/
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+        }
 
 .content {
     display: block;
@@ -39,6 +60,24 @@ html, body {
     margin: 0 auto;
     background: yellow;
 }
+    .Lsidebar {
+        width: 25%;
+        height: 500px;
+        background: gray;
+        float: left;
+    }
+    .container {
+        width: 60%;
+        height: 500px;
+        background: honeydew;
+        float: left;
+    }
+    .Rsidebar{
+        width: 15%;
+        height: 500px;
+        background: skyblue;
+        float: left;
+    }
 
 .footer {
     width: 100%;
