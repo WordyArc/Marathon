@@ -73,11 +73,47 @@ html, body {
         float: left;
     }
     .Rsidebar{
+        position: relative;
         width: 15%;
         height: 500px;
         background: skyblue;
         float: left;
     }
+        #sponsors {
+            position: inherit;
+            width: 100%;
+            height: 63px;
+            border-radius: 7% 7% 0 0;
+            background: rebeccapurple;
+            font: 20pt Arial;
+            color: black;
+            text-align: center;
+        }
+            #text {
+                top: 50%;
+                transform: translate(0, 50%);
+            }
+        #tsponsor {
+            position: inherit;
+            width: 100%;
+            height: 30px;
+            background: lightgray;
+            font: 13pt Arial;
+            color: black;
+            text-align: center;
+        }
+            #TStext {
+                top: 50%;
+                transform: translate(0, 25%);
+            }
+            #FEFUlogo {
+                width: 100%;
+                max-width: 150px;
+            }
+        #offsposor {
+
+        }
+            #offtext {}
 
 .footer {
     width: 100%;
